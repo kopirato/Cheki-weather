@@ -1,53 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cheki Weather yako• Live Forecast</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/weather-icon.svg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SelianTec | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <img src="assets/weather.png" alt="logo" class="logo">
-      <h1>Selian Weather</h1>
-    </div>
-    <p class="tag">Fast, simple weather — powered by OpenWeather</p>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">SelianTec</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="main">
-    <section class="card search-card">
-      <div class="search-row">
-        <input id="cityInput" placeholder="Enter city name (e.g. Nairobi)" autocomplete="off" />
-        <button id="searchBtn">Check</button>
-      </div>
-      <div class="hint">Tip: Try city names with country when ambiguous (e.g. Paris, FR)</div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Showcasing my work in tech, data, and web development.</p>
+  </section>
 
-    <section class="card result-card" id="result" aria-live="polite">
-      <div class="placeholder">
-        <img src="assets/empty-illustration.svg" alt="empty" />
-        <p>Search for a city to see current weather</p>
+  <!-- Projects Preview -->
+  <section class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://img.icons8.com/color/480/ms-excel.png" alt="Stock Tracking">
+        <div class="overlay">
+          <h3>Selelo Stock Tracking Excel Livebook</h3>
+          <p>Real-time stock and inventory management tool built in Excel.</p>
+        </div>
       </div>
-    </section>
-
-    <section class="card extras">
-      <h3>Quick cities</h3>
-      <div class="chips">
-        <button class="chip">Nairobi</button>
-        <button class="chip">London</button>
-        <button class="chip">New York</button>
-        <button class="chip">Tokyo</button>
-        <button class="chip">Sydney</button>
+      <div class="project-card">
+        <img src="https://img.icons8.com/color/480/worldwide-location.png" alt="Travel Blog">
+        <div class="overlay">
+          <h3>Travel Blog Website</h3>
+          <p>Sharing experiences, guides, and tourism inspiration with rich visuals.</p>
+        </div>
       </div>
-    </section>
-  </main>
+      <div class="project-card">
+        <img src="https://img.icons8.com/color/480/cloud.png" alt="Weather App">
+        <div class="overlay">
+          <h3>AI-Integrated Weather App</h3>
+          <p>Smart weather forecasts and personalized alerts powered by AI.</p>
+        </div>
+      </div>
+    </div>
+    <a href="projects.html" class="btn">View All Projects</a>
+  </section>
 
-  <footer class="footer">
-    <small>Made with ❤️ by David Kopirato • Data from OpenWeather</small>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SelianTec. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
